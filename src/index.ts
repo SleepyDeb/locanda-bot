@@ -7,7 +7,7 @@ const bot = new Bot(token);
 for (let command in commands) {
     logger.debug(command, "Loading command ")
 
-    commands[command]();
+    commands[command](bot);
 }
 
 logger.info("🤖 bot started")
