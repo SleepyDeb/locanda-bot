@@ -1,6 +1,7 @@
-import {bot} from "@/*"
+import {Bot} from "grammy";
+import {BotHandler} from "./";
 
-export default () => {
+export default (bot: Bot) => {
     bot.command("ping", (ctx) => {
         void ctx.reply("Pong!", {
             reply_parameters: {
