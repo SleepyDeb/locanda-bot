@@ -13,7 +13,3 @@ for (let command in commands) {
 logger.info("🤖 bot started")
 
 void bot.start();
-
-export {
-    bot
-}
